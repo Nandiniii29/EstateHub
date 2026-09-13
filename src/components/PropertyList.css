@@ -1,0 +1,26 @@
+.property-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.property-list-empty {
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--white);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+}
+
+@media (min-width: 640px) {
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

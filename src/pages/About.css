@@ -1,0 +1,65 @@
+.about-hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: var(--space-7) 0;
+  text-align: center;
+}
+
+.about-hero h1 {
+  color: var(--white);
+}
+
+.about-hero p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.about-mission {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.about-mission img {
+  border-radius: var(--radius-md);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.stats-section {
+  background: var(--deep-navy);
+  color: var(--white);
+  padding: var(--space-6) 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.stat-card strong {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem;
+  color: var(--gold);
+}
+
+.stat-card span {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  .about-mission {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,9 @@
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-7) var(--space-4);
+  text-align: center;
+  color: var(--text-muted);
+}

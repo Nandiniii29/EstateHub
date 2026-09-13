@@ -1,0 +1,131 @@
+.property-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.property-card-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--warm-white);
+}
+
+.property-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+}
+
+.favorite-btn.active {
+  color: #c0392b;
+}
+
+.property-card-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.property-purpose {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.property-card-body h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.property-card-body h3 a:hover {
+  color: var(--gold);
+}
+
+.property-location {
+  font-size: 0.88rem;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.property-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 6px 0 4px;
+}
+
+.property-price span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.property-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.property-specs span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.property-actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.property-actions .btn {
+  flex: 1;
+}
+
+.property-actions .compare-active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201, 162, 39, 0.06);
+}

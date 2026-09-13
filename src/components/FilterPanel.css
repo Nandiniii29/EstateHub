@@ -1,0 +1,78 @@
+.filter-panel {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.filter-group h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--navy);
+  margin-bottom: var(--space-3);
+}
+
+.filter-group label:not(.filter-checkbox) {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: var(--space-2);
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.filter-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.filter-pill.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+
+.filter-checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.filter-checkbox input {
+  accent-color: var(--gold);
+  width: 16px;
+  height: 16px;
+}
+
+input[type='range'] {
+  width: 100%;
+  accent-color: var(--gold);
+}

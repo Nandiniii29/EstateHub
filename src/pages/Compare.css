@@ -1,0 +1,31 @@
+
+.compare-page .compare-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.compare-heading > div { max-width: 760px; }
+.compare-heading p:last-child { margin-bottom: 0; }
+.eyebrow { display: inline-flex; align-items: center; gap: 6px; color: var(--gold); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+.compare-empty { margin-top: var(--space-5); }
+.compare-table-wrap { overflow-x: auto; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.compare-table { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 760px; }
+.compare-table th, .compare-table td { padding: var(--space-4); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.compare-table tr > *:last-child { border-right: 0; }
+.compare-table tbody tr:last-child > * { border-bottom: 0; }
+.compare-table thead th { background: var(--warm-white); }
+.compare-table tbody th { width: 150px; color: var(--navy); font-size: .82rem; white-space: nowrap; background: #fbfaf7; }
+.compare-table td { min-width: 190px; font-size: .9rem; color: var(--text-dark); line-height: 1.55; }
+.compare-label-cell { width: 150px; }
+.compare-card-head { display: flex; flex-direction: column; gap: 7px; min-width: 180px; }
+.compare-image-wrap { position: relative; }
+.compare-card-head img { width: 100%; height: 130px; object-fit: cover; border-radius: var(--radius-md); }
+.compare-card-head strong { color: var(--navy); line-height: 1.3; }
+.compare-card-head span { font-size: .8rem; color: var(--text-muted); font-weight: 400; }
+.compare-remove { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; border: 0; border-radius: 50%; background: rgba(255,255,255,.95); color: var(--navy); display: grid; place-items: center; }
+.compare-view-link { font-size: .82rem; font-weight: 700; color: var(--gold); }
+.compare-view-link:hover { color: var(--navy); }
+@media (max-width: 640px) { .compare-page .compare-heading { align-items: flex-start; flex-direction: column; } }

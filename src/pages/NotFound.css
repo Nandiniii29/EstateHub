@@ -1,0 +1,38 @@
+.not-found-page {
+  background: var(--navy);
+  color: var(--white);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.not-found-content {
+  text-align: center;
+  padding: var(--space-8) 0;
+}
+
+.not-found-code {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 5rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: var(--space-3);
+}
+
+.not-found-content h1 {
+  color: var(--white);
+}
+
+.not-found-content p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 460px;
+  margin: 0 auto var(--space-5);
+}
+
+.not-found-actions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
